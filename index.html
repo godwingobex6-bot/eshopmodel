@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>NUANCE — Concept Store · Sneakers, Sacs, Montres & Accessoires</title>
+  <meta name="description" content="NUANCE — concept store minimaliste. Une sélection courte et exigeante : sneakers, maroquinerie, montres et accessoires.">
+  <meta name="theme-color" content="#1D1A14">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="icon" type="image/png" href="./assets/icons/icon-192.png">
+  <link rel="apple-touch-icon" href="./assets/icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="NUANCE">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script type="module" src="./assets/js/app.js"></script>
+</head>
+<body>
+
+  <!-- ====== SVG sprite ====== -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="m20 20-3.8-3.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-bag" viewBox="0 0 24 24"><path d="M6 8h12l-1 12a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 10V6a3 3 0 0 1 6 0v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.5 5.1 13.6a4.8 4.8 0 0 1 6.8-6.8l.1.1.1-.1a4.8 4.8 0 0 1 6.8 6.8Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.8 2.8 5.8 6.4.9-4.6 4.5 1.1 6.4L12 17.4l-5.7 3 1.1-6.4L2.8 9.5l6.4-.9Z"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15m0 0-6-6m6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-minus" viewBox="0 0 24 24"><path d="M5 12h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 5 5L20 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><path d="M3 7h11v9H3zM14 10h4l3 3v3h-7" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/><circle cx="7" cy="18.5" r="1.7" fill="none" stroke="currentColor" stroke-width="1.7"/><circle cx="17.5" cy="18.5" r="1.7" fill="none" stroke="currentColor" stroke-width="1.7"/></symbol>
+    <symbol id="i-return" viewBox="0 0 24 24"><path d="M4 9a8 8 0 1 1-1 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 4v5h5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3 5 5.8v6c0 4.5 3 7.6 7 9.2 4-1.6 7-4.7 7-9.2v-6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m9 12 2.2 2.2L15.5 10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-filter" viewBox="0 0 24 24"><path d="M4 6h16M7 12h10m-7 6h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16m-2 0-1 13a2 2 0 0 1-2 2H9a2 2 0 0 1-2-2L6 7m3 0V5a1.8 1.8 0 0 1 1.8-1.8h2.4A1.8 1.8 0 0 1 15 5v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="m4 11 8-7 8 7v8a2 2 0 0 1-2 2h-4v-6h-4v6H6a2 2 0 0 1-2-2Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><rect x="4" y="4" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="4" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="4" y="13" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="13" y="13" width="7" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-package" viewBox="0 0 24 24"><path d="m12 3 8 4.5v9L12 21l-8-4.5v-9Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="m4.5 7.8 7.5 4.2 7.5-4.2M12 12v8.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+    <symbol id="i-headset" viewBox="0 0 24 24"><path d="M5 13a7 7 0 0 1 14 0" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="3.5" y="13" width="4" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><rect x="16.5" y="13" width="4" height="7" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11m0 0 4-4m-4 4-4-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 19h14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="i-tag" viewBox="0 0 24 24"><path d="m12.6 3.6 7.9 7.9a2 2 0 0 1 0 2.8l-6.2 6.2a2 2 0 0 1-2.8 0L3.6 12.6A2 2 0 0 1 3 11.2V4.9A1.9 1.9 0 0 1 4.9 3h6.3a2 2 0 0 1 1.4.6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="8.5" r="1.6" fill="currentColor"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#app">Aller au contenu</a>
+
+  <!-- ====== Bandeau défilant ====== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Livraison offerte dès 80 €</span><i>◆</i><span>Retours gratuits sous 30 jours</span><i>◆</i><span>Paiement 100 % sécurisé</span><i>◆</i><span>−10 % avec le code NOVA10</span><i>◆</i>
+      <span>Livraison offerte dès 80 €</span><i>◆</i><span>Retours gratuits sous 30 jours</span><i>◆</i><span>Paiement 100 % sécurisé</span><i>◆</i><span>−10 % avec le code NOVA10</span><i>◆</i>
+    </div>
+  </div>
+
+  <!-- ====== Header ====== -->
+  <header class="header" id="siteHeader">
+    <div class="container header__inner">
+      <button class="icon-btn only-mobile" id="searchToggle" aria-label="Rechercher">
+        <svg class="icon"><use href="#i-search"/></svg>
+      </button>
+
+      <a class="logo" href="#/" aria-label="NUANCE — retour à l'accueil">
+        <span class="logo__mark">N</span>
+        <span class="logo__word">Nuance</span>
+      </a>
+
+      <nav class="mainnav only-desktop" aria-label="Navigation principale">
+        <a href="#/" data-nav="home">Accueil</a>
+        <a href="#/boutique" data-nav="shop">Boutique</a>
+        <a href="#/boutique?promo=1" data-nav="promo">Promotions</a>
+      </nav>
+
+      <form class="search only-desktop" id="searchFormDesktop" role="search">
+        <svg class="icon search__icon"><use href="#i-search"/></svg>
+        <input type="search" id="searchInputDesktop" placeholder="Rechercher un produit, une marque…" aria-label="Rechercher" autocomplete="off">
+      </form>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost btn--sm" id="btnInstallTop" hidden>
+          <svg class="icon"><use href="#i-download"/></svg><span class="only-desktop">Installer</span>
+        </button>
+        <a class="icon-btn cart-btn" href="#/panier" aria-label="Panier">
+          <svg class="icon"><use href="#i-bag"/></svg>
+          <span class="cart-badge" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </div>
+    <form class="search header__search-mobile" id="searchFormMobile" role="search" hidden>
+      <svg class="icon search__icon"><use href="#i-search"/></svg>
+      <input type="search" id="searchInputMobile" placeholder="Rechercher un produit…" aria-label="Rechercher" autocomplete="off">
+      <button type="button" class="icon-btn" id="searchClose" aria-label="Fermer la recherche"><svg class="icon"><use href="#i-close"/></svg></button>
+    </form>
+  </header>
+
+  <!-- ====== Vue ====== -->
+  <main id="app" class="app" tabindex="-1"></main>
+
+  <!-- ====== Footer ====== -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div class="footer__brand">
+        <a class="logo" href="#/"><span class="logo__mark">N</span><span class="logo__word">Nuance</span></a>
+        <p>Concept store indépendant. Une sélection courte et exigeante d'objets bien conçus, pensée pour durer.</p>
+        <button class="btn btn--ghost btn--sm" id="btnInstallFooter" hidden>
+          <svg class="icon"><use href="#i-download"/></svg> Installer l'application
+        </button>
+      </div>
+      <nav class="footer__col" aria-label="Boutique">
+        <h4>Boutique</h4>
+        <a href="#/boutique?cat=sneakers">Sneakers</a>
+        <a href="#/boutique?cat=sacs">Sacs</a>
+        <a href="#/boutique?cat=montres">Montres</a>
+        <a href="#/boutique?cat=accessoires">Accessoires</a>
+        <a href="#/boutique?promo=1">Promotions</a>
+      </nav>
+      <nav class="footer__col" aria-label="Aide">
+        <h4>Aide</h4>
+        <a href="#/" data-toast="La page Livraison arrive bientôt. Livraison suivie 48–72 h — offerte dès 80 €.">Livraison</a>
+        <a href="#/" data-toast="Retours gratuits sous 30 jours, remboursement sous 5 jours ouvrés.">Retours</a>
+        <a href="#/" data-toast="Guide des tailles bientôt disponible. Nos tailles sont standards (UE).">Guide des tailles</a>
+        <a href="#/" data-toast="Écrivez-nous : bonjour@nuance.shop — réponse sous 24 h.">Nous contacter</a>
+      </nav>
+      <div class="footer__col">
+        <h4>Paiement sécurisé</h4>
+        <div class="pay-chips" aria-label="Moyens de paiement acceptés">
+          <span>Visa</span><span>Mastercard</span><span>PayPal</span><span>Apple Pay</span>
+        </div>
+        <p class="footer__note">Transactions chiffrées SSL / 3-D Secure.</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 Nuance — Concept Store. Démo PWA.</span>
+      <span>Conçu avec soin à Paris.</span>
+    </div>
+  </footer>
+
+  <!-- ====== Tab bar mobile ====== -->
+  <nav class="tabbar only-mobile" aria-label="Navigation mobile">
+    <a href="#/" data-nav="home"><svg class="icon"><use href="#i-home"/></svg><span>Accueil</span></a>
+    <a href="#/boutique" data-nav="shop"><svg class="icon"><use href="#i-grid"/></svg><span>Boutique</span></a>
+    <a href="#/boutique?promo=1" data-nav="promo"><svg class="icon"><use href="#i-tag"/></svg><span>Promos</span></a>
+    <a href="#/panier" data-nav="cart" class="tabbar__cart"><svg class="icon"><use href="#i-bag"/></svg><span>Panier</span><span class="cart-badge" data-cart-count hidden>0</span></a>
+  </nav>
+
+  <!-- ====== Mini panier (drawer) ====== -->
+  <div class="scrim" id="scrim" hidden></div>
+  <aside class="drawer" id="cartDrawer" role="dialog" aria-modal="true" aria-label="Votre panier" hidden>
+    <header class="drawer__head">
+      <h3>Panier <span class="drawer__count" data-cart-count-txt></span></h3>
+      <button class="icon-btn" id="drawerClose" aria-label="Fermer le panier"><svg class="icon"><use href="#i-close"/></svg></button>
+    </header>
+    <div class="drawer__ship" id="drawerShip"></div>
+    <div class="drawer__body" id="drawerBody"></div>
+    <footer class="drawer__foot" id="drawerFoot"></footer>
+  </aside>
+
+  <!-- ====== Toasts ====== -->
+  <div class="toasts" id="toasts" aria-live="polite" aria-atomic="false"></div>
+
+  <noscript>
+    <div style="padding:2rem;text-align:center;font-family:sans-serif">
+      Nuance est une application : activez JavaScript pour naviguer dans la boutique.
+    </div>
+  </noscript>
+</body>
+</html>

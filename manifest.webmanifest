@@ -1,0 +1,35 @@
+{
+  "name": "NUANCE — Concept Store",
+  "short_name": "NUANCE",
+  "description": "Concept store minimaliste : sneakers, maroquinerie, montres et accessoires, sélectionnés pour durer.",
+  "lang": "fr",
+  "dir": "ltr",
+  "id": "/",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#F7F4EE",
+  "theme_color": "#1D1A14",
+  "categories": ["shopping", "lifestyle"],
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "assets/icons/icon-maskable-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ouvrir la boutique",
+      "short_name": "Boutique",
+      "url": "./#/boutique",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Voir mon panier",
+      "short_name": "Panier",
+      "url": "./#/panier",
+      "icons": [{ "src": "assets/icons/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
